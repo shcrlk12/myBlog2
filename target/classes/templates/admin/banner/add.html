@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>관리자 화면</title>
+</head>
+<body>
+<div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
+
+<h1>배너 관리 - 배너 등록</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <th>배너명</th>
+            <td><input th:value="${banner.bannerName}" name="bannerName" type="text" placeholder="배너명 입력" required/></td>
+        </tr>
+        <tr>
+            <th>배너 파일</th>
+            <td><input type="file" name="file" accept="image/png, image/jpeg" required/></td>
+        </tr>
+        <tr>
+            <th>링크 주소</th>
+            <td><input th:value="${banner.bannerClickLink}" name="bannerClickLink" type="text" placeholder="링크 주소 입력" required/></td>
+        </tr>
+        <tr>
+            <th>오픈 방법</th>
+            <td>
+                <select name="bannerTargetInfo">
+                    <option value="_self">오픈 방법 선택</option>
+                    <option value="_blank">새창 오픈</option>
+                    <option value="_self">현재창 오픈</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>정렬 순서</th>
+            <td><input th:value="${banner.bannerDisplayNo}" name="bannerDisplayNo" type="number" placeholder="정렬 순서 입력" required/></td>
+        </tr>
+        <tr>
+            <th>공개 여부</th>
+            <td><input name="display" type="checkbox" value="true"/>공개</td>
+        </tr>
+    </table>
+    <button th:if="${not #strings.isEmpty(banner.id)}" type="submit">배너 업데이트</button>
+    <button th:if="${#strings.isEmpty(banner.id)}" type="submit">배너 등록</button>
+
+</form>
+<a href="/admin/banner/list.do">목록 이동</a>
+</body>
+</html>

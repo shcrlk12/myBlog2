@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobase.fastlms.FastlmsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.135 s <<< FAILURE! - in com.zerobase.fastlms.FastlmsApplicationTests
+com.zerobase.fastlms.FastlmsApplicationTests  Time elapsed: 0.134 s  <<< ERROR!
+org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.test.context.SpringBootContextLoader]: Unresolvable class definition; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/env/ConfigurableEnvironment
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/env/ConfigurableEnvironment
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.env.ConfigurableEnvironment
+
