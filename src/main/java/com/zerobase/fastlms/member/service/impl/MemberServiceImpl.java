@@ -1,14 +1,18 @@
 package com.zerobase.fastlms.member.service.impl;
 
 import com.zerobase.fastlms.admin.dto.MemberDto;
+import com.zerobase.fastlms.admin.entity.EmailTemplate;
 import com.zerobase.fastlms.admin.mapper.MemberMapper;
 import com.zerobase.fastlms.admin.model.MemberParam;
+import com.zerobase.fastlms.admin.repository.EmailTemplateRepository;
 import com.zerobase.fastlms.components.MailComponents;
 import com.zerobase.fastlms.course.model.ServiceResult;
+import com.zerobase.fastlms.member.dto.LoginHistoryDto;
 import com.zerobase.fastlms.member.entity.Member;
 import com.zerobase.fastlms.member.entity.MemberCode;
 import com.zerobase.fastlms.member.exception.MemberNotEmailAuthException;
 import com.zerobase.fastlms.member.exception.MemberStopUserException;
+import com.zerobase.fastlms.member.mapper.LoginHistoryMapper;
 import com.zerobase.fastlms.member.model.MemberInput;
 import com.zerobase.fastlms.member.model.ResetPasswordInput;
 import com.zerobase.fastlms.member.repository.MemberRepository;
@@ -37,9 +41,10 @@ public class MemberServiceImpl implements MemberService {
     
     private final MemberRepository memberRepository;
     private final MailComponents mailComponents;
-    
+    private final EmailTemplateRepository emailTemplateRepository;
+
     private final MemberMapper memberMapper;
-    
+    private final LoginHistoryMapper loginHistoryMapper;
     /**
      * 회원 가입
      */
@@ -66,11 +71,18 @@ public class MemberServiceImpl implements MemberService {
                 .userStatus(Member.MEMBER_STATUS_REQ)
                 .build();
         memberRepository.save(member);
-        
+
+        Optional<EmailTemplate> emailTemplateOptional = emailTemplateRepository.findById("MEMBER_REGISTER");
+
+        if(emailTemplateOptional.isEmpty())
+            return false;
+
+        EmailTemplate emailTemplate = emailTemplateOptional.get();
+
         String email = parameter.getUserId();
-        String subject = "fastlms 사이트 가입을 축하드립니다. ";
-        String text = "<p>fastlms 사이트 가입을 축하드립니다.<p><p>아래 링크를 클릭하셔서 가입을 완료 하세요.</p>"
-                + "<div><a target='_blank' href='http://localhost:8080/member/email-auth?id=" + uuid + "'> 가입 완료 </a></div>";
+        String subject = emailTemplate.getMailTitle();
+        String text = emailTemplate.getMailContext().replace("${uuid}", uuid);
+
         mailComponents.sendMail(email, subject, text);
         
         return true;
@@ -113,12 +125,18 @@ public class MemberServiceImpl implements MemberService {
         member.setResetPasswordKey(uuid);
         member.setResetPasswordLimitDt(LocalDateTime.now().plusDays(1));
         memberRepository.save(member);
-        
+
+        Optional<EmailTemplate> emailTemplateOptional = emailTemplateRepository.findById("RESET_PASSWORD");
+
+        if(emailTemplateOptional.isEmpty())
+            return false;
+
+        EmailTemplate emailTemplate = emailTemplateOptional.get();
+
         String email = parameter.getUserId();
-        String subject = "[fastlms] 비밀번호 초기화 메일 입니다. ";
-        String text = "<p>fastlms 비밀번호 초기화 메일 입니다.<p>" +
-                "<p>아래 링크를 클릭하셔서 비밀번호를 초기화 해주세요.</p>"+
-                "<div><a target='_blank' href='http://localhost:8080/member/reset/password?id=" + uuid + "'> 비밀번호 초기화 링크 </a></div>";
+        String subject = emailTemplate.getMailTitle();
+        String text = emailTemplate.getMailContext().replace("${uuid}", uuid);
+
         mailComponents.sendMail(email, subject, text);
     
         return false;
@@ -299,6 +317,68 @@ public class MemberServiceImpl implements MemberService {
         }
 
         return new User(member.getUserId(), member.getPassword(), grantedAuthorities);
+    }
+
+    @Override
+    public List<LoginHistoryDto> detail2(String userId) {
+
+        List<LoginHistoryDto> loginHistoryDtos = loginHistoryMapper.selectLoginHistory(userId);
+
+        long count = 0;
+        long totalCount = loginHistoryDtos.size();
+
+        for(LoginHistoryDto x : loginHistoryDtos) {
+            x.setSeq(totalCount - count);
+            count++;
+        }
+
+        return loginHistoryDtos;
+    }
+
+    @Override
+    public boolean checkResetPassword(String uuid) {
+        Optional<Member> optionalMember = memberRepository.findByResetPasswordKey(uuid);
+        if(!optionalMember.isPresent()) {
+            return false;
+        }
+
+        Member member = optionalMember.get();
+
+        if(member.getResetPasswordLimitDt() == null) {
+            throw new RuntimeException(" 유효한 날짜가 아닙니다.");
+        }
+
+        if(member.getResetPasswordLimitDt().isBefore(LocalDateTime.now())) {
+            throw new RuntimeException(" 유효한 날짜가 아닙니다.");
+        }
+
+        return true;
+    }
+
+    @Override
+    public boolean resetPassword(String uuid, String password) {
+        Optional<Member> optionalMember = memberRepository.findByResetPasswordKey(uuid);
+        if(!optionalMember.isPresent()) {
+            throw new UsernameNotFoundException("회원 정보가 존재하지 않습니다.");
+        }
+
+        Member member = optionalMember.get();
+
+        if(member.getResetPasswordLimitDt() == null) {
+            throw new RuntimeException(" 유효한 날짜가 아닙니다.");
+        }
+
+        if(member.getResetPasswordLimitDt().isBefore(LocalDateTime.now())) {
+            throw new RuntimeException(" 유효한 날짜가 아닙니다.");
+        }
+
+        String encPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+        member.setPassword(encPassword);
+        member.setResetPasswordKey("");
+        member.setResetPasswordLimitDt(null);
+
+        memberRepository.save(member);
+        return true;
     }
 }
 

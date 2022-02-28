@@ -28,7 +28,9 @@ public class MemberDto {
     
     String resetPasswordKey;
     LocalDateTime resetPasswordLimitDt;
-    
+
+    LocalDateTime lastLoginDt;
+
     boolean adminYn;
     String userStatus;
     

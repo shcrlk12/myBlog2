@@ -11,6 +11,8 @@ public class BannerInput {
     boolean  display;
 
     String bannerPath;
+    String bannerResPath;
+
     String bannerAlterText;
 
     String idList;

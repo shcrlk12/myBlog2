@@ -32,7 +32,9 @@ public class Member implements MemberCode {
     private LocalDateTime resetPasswordLimitDt;
     
     private boolean adminYn;
-    
+
+    private LocalDateTime lastLoginDt;
+
     private String userStatus;//이용가능한상태, 정지상태
     
     

@@ -11,6 +11,6 @@ import java.util.List;
 @Mapper
 public interface CategoryMapper {
 
-    List<CategoryDto> select(CategoryDto parameter);
+    List<CategoryDto> select(CategoryDto parameter, String userName);
 
 }

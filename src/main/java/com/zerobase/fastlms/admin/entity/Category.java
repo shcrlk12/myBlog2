@@ -19,6 +19,8 @@ public class Category {
     Long id;
     
     String categoryName;
+    String writer;
+
     int sortValue;
     boolean usingYn;
 }

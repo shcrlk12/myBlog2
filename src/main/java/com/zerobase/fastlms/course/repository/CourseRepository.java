@@ -9,5 +9,9 @@ import java.util.Optional;
 public interface CourseRepository extends JpaRepository<Course, Long> {
 
     Optional<List<Course>> findByCategoryId(long categoryId);
-    
+    List<Course> findByWritter(String writter);
+
+    List<Course> findByCategoryIdAndWritter(long categoryId, String writter);
+
+
 }

@@ -9,6 +9,7 @@ import com.zerobase.fastlms.admin.model.MemberInput;
 import com.zerobase.fastlms.admin.repository.BannerRepository;
 import com.zerobase.fastlms.admin.service.BannerService;
 import com.zerobase.fastlms.course.controller.BaseController;
+import com.zerobase.fastlms.member.dto.LoginHistoryDto;
 import com.zerobase.fastlms.member.service.MemberService;
 import com.zerobase.fastlms.util.PageUtil;
 import lombok.RequiredArgsConstructor;
@@ -60,33 +61,13 @@ public class AdminMemberController extends BaseController {
         
         MemberDto member = memberService.detail(parameter.getUserId());
         model.addAttribute("member", member);
-       
+
+        List<LoginHistoryDto> loginHistoryDtos = memberService.detail2(parameter.getUserId());
+        model.addAttribute("loginHistory", loginHistoryDtos);
+
         return "admin/member/detail";
     }
 
-    @GetMapping("/admin/banner/list.do")
-    public String bannerList(Model model) {
-
-        List<Banner> bannerList = bannerService.bannerList();
-
-        model.addAttribute("banner", bannerList);
-        System.out.println("complete");
-        return "admin/banner/list";
-    }
-
-    @GetMapping(value = {"/admin/banner/add.do","/admin/banner/edit.do"})
-    public String bannerAdd(Model model, MemberParam parameter,
-                            HttpServletRequest request) {
-
-        Banner banner = new Banner();
-
-        if(request.getRequestURI().contains("/edit.do")) {
-            banner = bannerService.updateBanner(Long.parseLong(parameter.getUserId()));
-        }
-
-        model.addAttribute("banner", banner);
-        return "admin/banner/add";
-    }
     
     @PostMapping("/admin/member/status.do")
     public String status(Model model, MemberInput parameter) {
@@ -107,40 +88,6 @@ public class AdminMemberController extends BaseController {
         return "redirect:/admin/member/detail.do?userId=" + parameter.getUserId();
     }
 
-    @PostMapping(value = {"/admin/banner/add.do", "/admin/banner/edit.do"})
-    public String bannerAddPost(BannerInput bannerInput, MultipartFile file, HttpServletRequest request) {
-        String localDirPath = "C:\\dev\\spring\\(10-3)김정원 - fastlms3\\fastlms3\\files\\banner\\";
-        String localImgPath = localDirPath + file.getOriginalFilename();
 
-        bannerInput.setBannerPath(localImgPath);
-        bannerInput.setBannerAlterText(file.getOriginalFilename());
-
-        if(file != null) {
-            File newFile = new File(localImgPath);
-            try {
-                FileCopyUtils.copy(file.getInputStream(), new FileOutputStream(newFile));
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-
-        if(request.getRequestURI().contains("/edit.do")) {
-            bannerService.updateBannerPost(bannerInput);
-        }
-        else {
-            bannerService.addBanner(bannerInput);
-        }
-
-        return "redirect:/admin/banner/list.do";
-    }
-
-    @PostMapping("/admin/banner/delete.do")
-    public String deleteBanner(BannerInput bannerInput){
-
-        bannerService.delelteBanner(bannerInput.getIdList());
-
-        return "redirect:/admin/banner/list.do";
-    }
-    
     
 }

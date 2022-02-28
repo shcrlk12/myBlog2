@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zerobase.fastlms.member.mapper.LoginHistoryMapper">
+
+    <select id="selectLoginHistory" resultType="com.zerobase.fastlms.member.dto.LoginHistoryDto">
+        select * from login_history where user_email= #{userId} order by login_dt DESC;
+    </select>
+</mapper>

@@ -18,6 +18,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,11 +43,12 @@ public class CourseServiceImpl implements CourseService {
     }
     
     @Override
-    public boolean add(CourseInput parameter) {
+    public boolean add(CourseInput parameter, String userName) {
         
         LocalDate saleEndDt = getLocalDate(parameter.getSaleEndDtText());
         
         Course course = Course.builder()
+                .writter(userName)
                 .categoryId(parameter.getCategoryId())
                 .subject(parameter.getSubject())
                 .keyword(parameter.getKeyword())
@@ -65,7 +67,7 @@ public class CourseServiceImpl implements CourseService {
     }
     
     @Override
-    public boolean set(CourseInput parameter) {
+    public boolean set(CourseInput parameter, String userName) {
         
         LocalDate saleEndDt = getLocalDate(parameter.getSaleEndDtText());
         
@@ -76,6 +78,7 @@ public class CourseServiceImpl implements CourseService {
         }
         
         Course course = optionalCourse.get();
+        course.setWritter(userName);
         course.setCategoryId(parameter.getCategoryId());
         course.setSubject(parameter.getSubject());
         course.setKeyword(parameter.getKeyword());
@@ -138,18 +141,19 @@ public class CourseServiceImpl implements CourseService {
     }
     
     @Override
-    public List<CourseDto> frontList(CourseParam parameter) {
+    public List<CourseDto> frontList(CourseParam parameter, String userName) {
         
         if (parameter.getCategoryId() < 1) {
-            List<Course> courseList = courseRepository.findAll();
+            List<Course> courseList = courseRepository.findByWritter(userName);
             return CourseDto.of(courseList);
         }
         
-        Optional<List<Course>> optionalCourses = courseRepository.findByCategoryId(parameter.getCategoryId());
-        if (optionalCourses.isPresent()) {
-            return CourseDto.of(optionalCourses.get());
+        List<Course> courseList = courseRepository.findByCategoryIdAndWritter(parameter.getCategoryId(), userName);
+
+        if (courseList.isEmpty()) {
+            return Collections.emptyList();
         }
-        return null;
+        return CourseDto.of(courseList);
     }
     
     @Override

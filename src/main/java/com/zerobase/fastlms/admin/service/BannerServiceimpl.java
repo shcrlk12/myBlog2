@@ -30,6 +30,7 @@ public class BannerServiceimpl implements BannerService{
                 .bannerDisplayNo(bannerInput.getBannerDisplayNo())
                 .isDisplay(bannerInput.isDisplay())
                 .regDt(LocalDateTime.now())
+                .bannerResPath(bannerInput.getBannerResPath())
                 .isDelete(false)
                 .build();
 

@@ -14,12 +14,12 @@ public interface CourseService {
     /**
      * 강좌 등록
      */
-    boolean add(CourseInput parameter);
+    boolean add(CourseInput parameter, String userName);
     
     /**
      * 강좌 정보수정
      */
-    boolean set(CourseInput parameter);
+    boolean set(CourseInput parameter, String userName);
     
     /**
      * 강좌 목록
@@ -39,7 +39,7 @@ public interface CourseService {
     /**
      * 프론트 강좌 목록
      */
-    List<CourseDto> frontList(CourseParam parameter);
+    List<CourseDto> frontList(CourseParam parameter, String userName);
     
     /**
      * 프론트 강좌 상세 정보

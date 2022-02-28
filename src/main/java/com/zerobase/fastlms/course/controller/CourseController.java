@@ -28,13 +28,13 @@ public class CourseController extends BaseController {
     
     @GetMapping("/course")
     public String course(Model model
-            , CourseParam parameter) {
+            , CourseParam parameter, Principal principal) {
         
-        List<CourseDto> list = courseService.frontList(parameter);
+        List<CourseDto> list = courseService.frontList(parameter, principal.getName());
         model.addAttribute("list", list);
         
         int courseTotalCount = 0;
-        List<CategoryDto> categoryList = categoryService.frontList(CategoryDto.builder().build());
+        List<CategoryDto> categoryList = categoryService.frontList(CategoryDto.builder().build(), principal.getName());
         if (categoryList != null) {
             for(CategoryDto x : categoryList) {
                 courseTotalCount += x.getCourseCount();
@@ -43,8 +43,8 @@ public class CourseController extends BaseController {
         
         model.addAttribute("categoryList", categoryList);
         model.addAttribute("courseTotalCount", courseTotalCount);
-        
-        return "admin/course/index";
+
+        return "course/index";
     }
     
     @GetMapping("/course/{id}")
@@ -52,23 +52,36 @@ public class CourseController extends BaseController {
             , CourseParam parameter) {
         
         CourseDto detail = courseService.frontDetail(parameter.getId());
+        System.out.println("detail URL");
+        System.out.println(detail.getUrlFilename());
         model.addAttribute("detail", detail);
         
         return "course/detail";
     }
 
-//    @GetMapping("/edit-blog")
-//    public String editBlog(Model model
-//            , CourseParam parameter) {
-//
-//        CourseDto detail = courseService.frontDetail(parameter.getId());
-//        model.addAttribute("detail", detail);
-//
-//        return "course/detail";
-//    }
-    
-    
-    
-    
-    
+    @GetMapping("/edit-blog-list")
+    public String list(Model model, CourseParam parameter) {
+
+        parameter.init();
+        List<CourseDto> courseList = courseService.list(parameter);
+
+        long totalCount = 0;
+        if (!CollectionUtils.isEmpty(courseList)) {
+            totalCount = courseList.get(0).getTotalCount();
+        }
+        String queryString = parameter.getQueryString();
+        String pagerHtml = getPaperHtml(totalCount, parameter.getPageSize(), parameter.getPageIndex(), queryString);
+
+        model.addAttribute("list", courseList);
+        model.addAttribute("totalCount", totalCount);
+        model.addAttribute("pager", pagerHtml);
+
+        return "course/list";
+    }
+
+
+
+
+
+
 }

@@ -58,29 +58,20 @@
     <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
 
     <div>
+        <div style="width: 500px; height: 300px; margin: auto">
+            <img th:src="${detail.urlFilename}" style="width: 100%; height: 100%"/>
+        </div>
         <h2>강좌명: <span th:text="${detail.subject}">강좌</span></h2>
         <div th:utext="${detail.contents}">
         </div>
 
         <div>
-            <p>가격: <span th:text="${detail.price}">0</span></p>
-            <p>할인가격: <span th:text="${detail.salePrice}">0</span></p>
-        </div>
-
-        <div>
-            <img th:src="${detail.urlFilename}"/>
-        </div>
-
-        <div>
             <form id="submitForm" method="post">
                 <input type="hidden" name="id" th:value="${detail.id}"/>
-                <button type="submit">수강신청</button>
-                <a href="/course">강좌목록</a>
+                <a href="/course">글 목록</a>
             </form>
         </div>
 
     </div>
-
-
 </body>
 </html>

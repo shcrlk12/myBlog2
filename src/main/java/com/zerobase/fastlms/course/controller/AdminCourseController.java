@@ -21,6 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.security.Principal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
@@ -33,34 +34,14 @@ public class AdminCourseController extends BaseController {
     private final CourseService courseService;
     private final CategoryService categoryService;
     
-    @GetMapping("/edit-blog-list")
-    public String list(Model model, CourseParam parameter) {
-        
-        parameter.init();
-        List<CourseDto> courseList = courseService.list(parameter);
-        
-        long totalCount = 0;
-        if (!CollectionUtils.isEmpty(courseList)) {
-            totalCount = courseList.get(0).getTotalCount();
-        }
-        String queryString = parameter.getQueryString();
-        String pagerHtml = getPaperHtml(totalCount, parameter.getPageSize(), parameter.getPageIndex(), queryString);
-        
-        model.addAttribute("list", courseList);
-        model.addAttribute("totalCount", totalCount);
-        model.addAttribute("pager", pagerHtml);
-        
-        return "course/list";
-    }
-    
-    @GetMapping(value = {"/admin/course/add.do", "/admin/course/edit.do"})
+    @GetMapping(value = {"/course/add", "/course/edit"})
     public String add(Model model, HttpServletRequest request
             , CourseInput parameter) {
         
         //카테고리 정보를 내려줘야 함.
         model.addAttribute("category", categoryService.list());
         
-        boolean editMode = request.getRequestURI().contains("/edit.do");
+        boolean editMode = request.getRequestURI().contains("/edit");
         CourseDto detail = new CourseDto();
         
         if (editMode) {
@@ -77,7 +58,7 @@ public class AdminCourseController extends BaseController {
         model.addAttribute("editMode", editMode);
         model.addAttribute("detail", detail);
         
-        return "admin/course/add";
+        return "course/add";
     }
     
     
@@ -120,9 +101,9 @@ public class AdminCourseController extends BaseController {
         return new String[]{newFilename, newUrlFilename};
     }
     
-    @PostMapping(value = {"/admin/course/add.do", "/admin/course/edit.do"})
+    @PostMapping(value = {"/course/add", "/course/edit"})
     public String addSubmit(Model model, HttpServletRequest request
-                            , MultipartFile file
+                            , MultipartFile file, Principal principal
             , CourseInput parameter) {
     
         String saveFilename = "";
@@ -130,17 +111,21 @@ public class AdminCourseController extends BaseController {
         
         if (file != null) {
             String originalFilename = file.getOriginalFilename();
-            
-            String baseLocalPath = "/Users/kyutaepark/Documents/sources/zerobase/fastlms/files";
-            String baseUrlPath = "/files";
+
+            String basePath = "C:/dev/spring/(10-3)김정원 - fastlms3/fastlms3/src/main/resources/static";
+            String baseLocalPath = "/img/blog/thumbnail";
+            String baseUrlPath = "/img/blog/thumbnail";
             
             String[] arrFilename = getNewSaveFile(baseLocalPath, baseUrlPath, originalFilename);
     
             saveFilename = arrFilename[0];
             urlFilename = arrFilename[1];
-            
+            System.out.println("saveFilename");
+            System.out.println(saveFilename);
+            System.out.println(urlFilename);
+
             try {
-                File newFile = new File(saveFilename);
+                File newFile = new File(basePath + saveFilename);
                 FileCopyUtils.copy(file.getInputStream(), new FileOutputStream(newFile));
             } catch (IOException e) {
                 log.info("############################ - 1");
@@ -151,7 +136,7 @@ public class AdminCourseController extends BaseController {
         parameter.setFilename(saveFilename);
         parameter.setUrlFilename(urlFilename);
         
-        boolean editMode = request.getRequestURI().contains("/edit.do");
+        boolean editMode = request.getRequestURI().contains("/edit");
         
         if (editMode) {
             long id = parameter.getId();
@@ -162,22 +147,22 @@ public class AdminCourseController extends BaseController {
                 return "common/error";
             }
             
-            boolean result = courseService.set(parameter);
+            boolean result = courseService.set(parameter, principal.getName());
             
         } else {
-            boolean result = courseService.add(parameter);
+            boolean result = courseService.add(parameter, principal.getName());
         }
         
-        return "redirect:/admin/course/list.do";
+        return "redirect:/edit-blog-list";
     }
     
-    @PostMapping("/admin/course/delete.do")
+    @PostMapping("/course/delete")
     public String del(Model model, HttpServletRequest request
             , CourseInput parameter) {
         
         boolean result = courseService.del(parameter.getIdList());
         
-        return "redirect:/admin/course/list.do";
+        return "redirect:/edit-blog-list";
     }
     
     

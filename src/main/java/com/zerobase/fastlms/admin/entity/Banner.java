@@ -19,6 +19,8 @@ public class Banner {
     Long id;
 
     String bannerPath;
+    String bannerResPath;
+
     String bannerAlterText;
     String bannerName;
 

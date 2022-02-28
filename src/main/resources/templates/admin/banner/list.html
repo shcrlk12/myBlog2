@@ -51,9 +51,6 @@
                         idList.push($(this).val());
                     });
 
-                    alert(idList.join(','));
-                    console.log(idList);
-                    console.log(idList.join(','));
 
                     var $deleteForm = $('form[name=deleteForm]');
                     $deleteForm.find('input[name=idList]').val( idList.join(',') );
@@ -69,7 +66,7 @@
 
         <h1>배너 관리</h1>
         <a href="/admin/banner/add.do">배너 등록</a>
-        <a id="deleteButton">선택 삭제</a>
+        <a id="deleteButton" style="cursor:pointer; color: blue; text-decoration: underline">선택 삭제</a>
 
         <table id="banner">
             <thead>
@@ -92,7 +89,7 @@
                         </p>
                     </td>
 
-                    <td><img src="/files/banner/heropy_medium.png" th:alt="${x.bannerAlterText}"/></td>
+                    <td style="height: 200px"><img th:src="${x.bannerResPath}" th:alt="${x.bannerAlterText}" style="height: 100%"/></td>
                     <td th:text="${x.regDt}"></td>
                 </tr>
             </tbody>

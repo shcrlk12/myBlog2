@@ -33,7 +33,9 @@ public class Course {
     long price;
     long salePrice;
     LocalDate saleEndDt;
-    
+
+    String writter;
+
     LocalDateTime regDt;//등록일(추가날짜)
     LocalDateTime udtDt;//수정일(수정날짜)
     
