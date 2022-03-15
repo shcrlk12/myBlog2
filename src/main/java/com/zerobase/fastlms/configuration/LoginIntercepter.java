@@ -40,6 +40,6 @@ public class LoginIntercepter implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        HandlerInterceptor.super.afterCompletion(request, response, handler, ex); //배포테스트
+        HandlerInterceptor.super.afterCompletion(request, response, handler, ex); //배포테11스트
     }
 }
