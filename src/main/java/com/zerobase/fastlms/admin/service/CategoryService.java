@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface CategoryService {
     
-    List<CategoryDto> list();
+    List<CategoryDto> list(String name);
     
     /**
      * 카테고리 신규 추가
@@ -31,7 +31,7 @@ public interface CategoryService {
     /**
      * 프론트 카테고리 정보
      */
-    List<CategoryDto> frontList(CategoryDto parameter, String userName);
+    List<CategoryDto> frontList(String userName);
     
 
     List<CourseDto> findAllCourse();

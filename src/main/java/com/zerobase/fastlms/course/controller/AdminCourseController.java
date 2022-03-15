@@ -36,10 +36,10 @@ public class AdminCourseController extends BaseController {
     
     @GetMapping(value = {"/course/add", "/course/edit"})
     public String add(Model model, HttpServletRequest request
-            , CourseInput parameter) {
+            , CourseInput parameter, Principal principal) {
         
         //카테고리 정보를 내려줘야 함.
-        model.addAttribute("category", categoryService.list());
+        model.addAttribute("category", categoryService.list(principal.getName()));
         
         boolean editMode = request.getRequestURI().contains("/edit");
         CourseDto detail = new CourseDto();
@@ -112,7 +112,7 @@ public class AdminCourseController extends BaseController {
         if (file != null) {
             String originalFilename = file.getOriginalFilename();
 
-            String basePath = "C:/dev/spring/(10-3)김정원 - fastlms3/fastlms3/src/main/resources/static";
+            String basePath = "C:/dev/spring/fastlms3_blog/fastlms3/src/main/resources/static";
             String baseLocalPath = "/img/blog/thumbnail";
             String baseUrlPath = "/img/blog/thumbnail";
             

@@ -5,22 +5,29 @@
     <title>fastlms</title>
 </head>
 <body>
-
     <div th:fragment="fragment-body-menu">
         <div>
-            <a href="/">메인 페이지</a>
-            |
-            <a href="/member/register">회원 가입</a>
-            |
-            <a href="/member/info">회원 정보</a>
-            |
-            <a href="/blog/all">글 목록</a>
-            |
-            <a href="/course">내 글</a>
-            |
-            <a href="/member/login">로그인</a>
-            |
-            <a href="/member/logout">로그아웃</a>
+            <div style="float : left">
+                <a href="/">메인 페이지</a>
+                |
+                <a href="/member/register">회원 가입</a>
+                |
+                <a href="/member/info">회원 정보</a>
+                |
+                <a href="/blog/all">글 목록</a>
+                |
+                <a href="/course">내 글</a>
+                |
+                <a href="/member/login">로그인</a>
+                |
+                <a href="/member/logout">로그아웃</a>
+            </div>
+            <div style="float: right">
+                <span>안녕하세요 </span>
+                <b th:text="${userName}"></b>
+                <span> 님</span>
+            </div>
+            <div style="clear: both; content: ''; display: block"></div>
         </div>
         <hr/>
     </div>

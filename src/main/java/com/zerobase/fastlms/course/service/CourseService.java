@@ -1,12 +1,12 @@
 package com.zerobase.fastlms.course.service;
 
+import com.zerobase.fastlms.course.dto.CommentDto;
 import com.zerobase.fastlms.course.dto.CourseDto;
 import com.zerobase.fastlms.course.model.CourseInput;
 import com.zerobase.fastlms.course.model.CourseParam;
-import com.zerobase.fastlms.course.model.ServiceResult;
-import com.zerobase.fastlms.course.model.TakeCourseInput;
 
 import java.util.List;
+import java.util.Set;
 
 public interface CourseService {
     
@@ -24,7 +24,7 @@ public interface CourseService {
     /**
      * 강좌 목록
      */
-    List<CourseDto> list(CourseParam parameter);
+    List<CourseDto> list(CourseParam parameter, String userName);
     
     /**
      * 강좌 상세정보
@@ -45,15 +45,13 @@ public interface CourseService {
      * 프론트 강좌 상세 정보
      */
     CourseDto frontDetail(long id);
-    
-    /**
-     * 수강신청
-     */
-    ServiceResult req(TakeCourseInput parameter);
-    
+
     /**
      * 전체 강좌 목록
      */
     List<CourseDto> listAll();
-    
+
+    void postComment(Long blogId, String text, String name);
+
+    List<CommentDto> getComments(long id);
 }

@@ -3,55 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>강좌 상세 페이지</title>
+
     <style>
-        span.price {
-            text-decoration: line-through;
+        .clearfix::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+        .comment-left{
+            float:left;
+            width: 20%;
+        }
+
+        .write-comment{
+            width:70%;
         }
     </style>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        $(function() {
-
-            $('#submitForm').on('submit', function() {
-
-                if (!confirm('수강 신청을 하시겠습니까?')) {
-                    return false;
-                }
-
-                var $thisForm = $(this);
-
-                var url = '/api/course/req.api';
-                var parameter = {
-                    courseId: $thisForm.find('input[name=id]').val()
-                };
-                axios.post(url, parameter).then(function(response) {
-                    console.log(response);
-                    console.log(response.data);
-
-                    response.data = response.data || {};
-                    response.data.header = response.data.header || {};
-
-                    if (!response.data.header.result) {
-                        alert(response.data.header.message);
-                        return false;
-                    }
-
-                    //정상적일때
-                    alert(' 강좌가 정상적으로 신청되었습니다. ');
-                    location.href = '/';
-
-
-                }).catch(function(err) {
-                    console.log(err);
-                });
-
-                return false;
-            });
-
-        });
-    </script>
 </head>
 <body>
     <h1>강좌 상세 정보 </h1>
@@ -71,7 +38,24 @@
                 <a href="/course">글 목록</a>
             </form>
         </div>
+        <div id="comment" class="clearfix">
+            <div>
+                <form method="post">
+                    <div class="comment-left">덧글 쓰기</div>
+                    <textarea class="write-comment" name = "commentText" id = "text" cols = "30" rows = "10"></textarea>
+                    <button type="submit">댓글 작성</button>
+                </form>
+            </div>
+        </div>
 
+        <div th:each="x : ${comments}" style="border: solid 1px black">
+            <div class="clearfix">
+                <div th:text="${x.userName}" style="float: left"></div>
+                <div th:text="${x.regDt}" style="float: right"></div>
+            </div>
+            <div th:text="${x.text}" style="height: 70px; border-top: solid 1px black; box-sizing: border-box"></div>
+            <button th:if="${x.userName == userId}">덧글 삭제</button>
+        </div>
     </div>
 </body>
 </html>

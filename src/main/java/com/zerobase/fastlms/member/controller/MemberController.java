@@ -2,13 +2,10 @@ package com.zerobase.fastlms.member.controller;
 
 
 import com.zerobase.fastlms.admin.dto.MemberDto;
-import com.zerobase.fastlms.course.dto.TakeCourseDto;
 import com.zerobase.fastlms.course.model.ServiceResult;
-import com.zerobase.fastlms.course.service.TakeCourseService;
 import com.zerobase.fastlms.member.model.MemberInput;
 import com.zerobase.fastlms.member.model.ResetPasswordInput;
 import com.zerobase.fastlms.member.service.MemberService;
-import com.zerobase.fastlms.util.PasswordUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,8 +22,7 @@ import java.util.List;
 public class MemberController {
     
     private final MemberService memberService;
-    private final TakeCourseService takeCourseService;
-    
+
     @RequestMapping("/member/login")
     public String login() {
         
@@ -137,20 +133,7 @@ public class MemberController {
         
         return "redirect:/member/info";
     }
-    
-    
-    @GetMapping("/member/takecourse")
-    public String memberTakeCourse(Model model, Principal principal) {
-        
-        String userId = principal.getName();
-        List<TakeCourseDto> list = takeCourseService.myCourse(userId);
-        
-        model.addAttribute("list", list);
-        
-        return "member/takecourse";
-    }
-    
-    
+
     @GetMapping("/member/withdraw")
     public String memberWithdraw(Model model) {
         

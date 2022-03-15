@@ -11,6 +11,7 @@
              , (select count(*) from course where category_id = c.id) as course_count
         from category c
         where using_yn = 1
+        and writer = #{userName}
         order by sort_value desc
 
     </select>

@@ -1,0 +1,193 @@
+[2022-03-11 16:41:02,791] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:41:05,210] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:42:34,799] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:42:34,801] [INFO ] [CourseController.java:94] - 0
+[2022-03-11 16:49:49,103] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:49:49,104] [INFO ] [CourseController.java:94] - 0
+[2022-03-11 16:49:53,606] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:49:53,606] [INFO ] [CourseController.java:94] - 0
+[2022-03-11 16:50:29,379] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:50:29,379] [INFO ] [CourseController.java:94] - 0
+[2022-03-11 16:50:33,333] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:50:33,333] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:50:35,387] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:50:35,387] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:02,542] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:02,542] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:06,013] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:06,013] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:11,561] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:11,561] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:14,158] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:14,158] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:15,720] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:15,721] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:16,318] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:16,319] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:17,574] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:17,574] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:43,948] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:43,948] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:43,949] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=1'>&gt;</a>
+<a href='?pageIndex=1'>&gt;&gt;</a>
+
+[2022-03-11 16:51:45,436] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:51:45,436] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:51:45,436] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=1'>&gt;</a>
+<a href='?pageIndex=1'>&gt;&gt;</a>
+
+[2022-03-11 16:52:29,716] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:29,717] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:52:29,717] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=1'>&gt;</a>
+<a href='?pageIndex=1'>&gt;&gt;</a>
+
+[2022-03-11 16:52:30,427] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:30,427] [INFO ] [CourseController.java:94] - 2
+[2022-03-11 16:52:30,427] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=1'>&gt;</a>
+<a href='?pageIndex=1'>&gt;&gt;</a>
+
+[2022-03-11 16:52:37,224] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:37,224] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 16:52:37,225] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=2'>2</a>
+<a href='?pageIndex=2'>&gt;</a>
+<a href='?pageIndex=2'>&gt;&gt;</a>
+
+[2022-03-11 16:52:39,164] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:39,164] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 16:52:39,164] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=2'>2</a>
+<a href='?pageIndex=2'>&gt;</a>
+<a href='?pageIndex=2'>&gt;&gt;</a>
+
+[2022-03-11 16:52:41,195] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:41,195] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 16:52:41,195] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a href='?pageIndex=1'>1</a>
+<a class='on' href='?pageIndex=2'>2</a>
+<a href='?pageIndex=2'>&gt;</a>
+<a href='?pageIndex=2'>&gt;&gt;</a>
+
+[2022-03-11 16:52:42,018] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:42,018] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 16:52:42,018] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=2'>2</a>
+<a href='?pageIndex=2'>&gt;</a>
+<a href='?pageIndex=2'>&gt;&gt;</a>
+
+[2022-03-11 16:52:43,193] [INFO ] [CourseController.java:93] - 
+[2022-03-11 16:52:43,193] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 16:52:43,193] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a href='?pageIndex=1'>1</a>
+<a class='on' href='?pageIndex=2'>2</a>
+<a href='?pageIndex=2'>&gt;</a>
+<a href='?pageIndex=2'>&gt;&gt;</a>
+
+[2022-03-11 17:16:43,042] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@76f0e3b]
+[2022-03-11 17:16:44,594] [INFO ] [CourseController.java:71] - []
+[2022-03-11 17:16:46,261] [INFO ] [CourseController.java:71] - []
+[2022-03-11 17:16:55,670] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@1e5cfb18]
+[2022-03-11 17:16:57,195] [INFO ] [CourseController.java:71] - []
+[2022-03-11 17:16:59,305] [INFO ] [CourseController.java:93] - 
+[2022-03-11 17:16:59,306] [INFO ] [CourseController.java:94] - 3
+[2022-03-11 17:16:59,306] [INFO ] [CourseController.java:97] - <a href='?pageIndex=1'>&lt;&lt;</a>
+<a href='?pageIndex=1'>&lt;</a>
+<a class='on' href='?pageIndex=1'>1</a>
+<a href='?pageIndex=1'>&gt;</a>
+<a href='?pageIndex=1'>&gt;&gt;</a>
+
+[2022-03-11 17:17:13,626] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@1a550c6f]
+[2022-03-11 17:17:16,478] [INFO ] [CourseController.java:71] - []
+[2022-03-11 17:17:18,654] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@9dc5c75]
+[2022-03-11 17:27:38,985] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@238bf6be]
+[2022-03-11 17:34:50,166] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:34:50,196] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:34:50,197] [INFO ] [CategoryServiceImpl.java:142] - Category(id=6, categoryName=내 카테고리, writer=shcrlk12@gmail.com, sortValue=0, usingYn=true, courseList=[Course(id=20, categoryId=6, imagePath=null, keyword=123123, subject=sfdsdfa, summary=ㅈㅁㄷㄹㄹㅈㅁㄷㄹㅈㄷㅁ, contents=<p>ㅁㅈㄷㄹㄹㅈㄷㅁㄹㄷㅈㅁㄹㄷㅈㅁㄹㄷㅁㅈㄹㄷㅁㅈ</p>, writer=shcrlk12@gmail.com, regDt=2022-03-11T16:39:33.849484, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, urlFilename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, comments=[])])
+[2022-03-11 17:34:50,198] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:26,624] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:26,628] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:35:26,629] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:26,629] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:35:26,630] [INFO ] [CategoryServiceImpl.java:142] - Category(id=6, categoryName=내 카테고리, writer=shcrlk12@gmail.com, sortValue=0, usingYn=true, courseList=[Course(id=20, categoryId=6, imagePath=null, keyword=123123, subject=sfdsdfa, summary=ㅈㅁㄷㄹㄹㅈㅁㄷㄹㅈㄷㅁ, contents=<p>ㅁㅈㄷㄹㄹㅈㄷㅁㄹㄷㅈㅁㄹㄷㅈㅁㄹㄷㅁㅈㄹㄷㅁㅈ</p>, writer=shcrlk12@gmail.com, regDt=2022-03-11T16:39:33.849484, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, urlFilename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, comments=[])])
+[2022-03-11 17:35:26,631] [INFO ] [CategoryServiceImpl.java:145] - 내 카테고리
+[2022-03-11 17:35:26,632] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:26,632] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:35:28,934] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:28,939] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:35:28,939] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:28,940] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:35:28,941] [INFO ] [CategoryServiceImpl.java:142] - Category(id=6, categoryName=내 카테고리, writer=shcrlk12@gmail.com, sortValue=0, usingYn=true, courseList=[Course(id=20, categoryId=6, imagePath=null, keyword=123123, subject=sfdsdfa, summary=ㅈㅁㄷㄹㄹㅈㅁㄷㄹㅈㄷㅁ, contents=<p>ㅁㅈㄷㄹㄹㅈㄷㅁㄹㄷㅈㅁㄹㄷㅈㅁㄹㄷㅁㅈㄹㄷㅁㅈ</p>, writer=shcrlk12@gmail.com, regDt=2022-03-11T16:39:33.849484, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, urlFilename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, comments=[])])
+[2022-03-11 17:35:28,942] [INFO ] [CategoryServiceImpl.java:145] - 내 카테고리
+[2022-03-11 17:35:28,943] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:35:28,943] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:36:29,376] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:36:29,411] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:36:29,412] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:36:29,412] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:36:29,413] [INFO ] [CategoryServiceImpl.java:142] - Category(id=6, categoryName=내 카테고리, writer=shcrlk12@gmail.com, sortValue=0, usingYn=true, courseList=[Course(id=20, categoryId=6, imagePath=null, keyword=123123, subject=sfdsdfa, summary=ㅈㅁㄷㄹㄹㅈㅁㄷㄹㅈㄷㅁ, contents=<p>ㅁㅈㄷㄹㄹㅈㄷㅁㄹㄷㅈㅁㄹㄷㅈㅁㄹㄷㅁㅈㄹㄷㅁㅈ</p>, writer=shcrlk12@gmail.com, regDt=2022-03-11T16:39:33.849484, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, urlFilename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, comments=[])])
+[2022-03-11 17:36:29,414] [INFO ] [CategoryServiceImpl.java:145] - 내 카테고리
+[2022-03-11 17:36:29,415] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:36:29,415] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:37:12,010] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:37:12,014] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:37:12,015] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:37:12,015] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:37:12,016] [INFO ] [CategoryServiceImpl.java:142] - Category(id=6, categoryName=내 카테고리, writer=shcrlk12@gmail.com, sortValue=0, usingYn=true, courseList=[Course(id=20, categoryId=6, imagePath=null, keyword=123123, subject=sfdsdfa, summary=ㅈㅁㄷㄹㄹㅈㅁㄷㄹㅈㄷㅁ, contents=<p>ㅁㅈㄷㄹㄹㅈㄷㅁㄹㄷㅈㅁㄹㄷㅈㅁㄹㄷㅁㅈㄹㄷㅁㅈ</p>, writer=shcrlk12@gmail.com, regDt=2022-03-11T16:39:33.849484, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, urlFilename=/img/blog/thumbnail/2022/03/11/43d637f1fb54437f9019b17af7220fa4, comments=[])])
+[2022-03-11 17:37:12,018] [INFO ] [CategoryServiceImpl.java:145] - 내 카테고리
+[2022-03-11 17:37:12,019] [INFO ] [CategoryServiceImpl.java:142] - Category(id=4, categoryName=153, writer=shcrlk12@naver.com, sortValue=0, usingYn=true, courseList=[Course(id=18, categoryId=4, imagePath=null, keyword=sadsfadfasd, subject=sfdsdfa, summary=fdasfdsafsda, contents=<p>fasdasfdsafdasfdsadasdfsfad</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:11:24.203774, udtDt=2022-03-10T17:13:07.800444, filename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, urlFilename=/img/blog/thumbnail/2022/03/10/2abb70559b9c4897aab5f7afd4f5201b, comments=[Comment(id=4, text=test, userName=shcrlk12@naver.com, regDt=2022-03-10T17:10:49.793212)]), Course(id=19, categoryId=4, imagePath=null, keyword=ㅋㅌㅍㅊㅍㅋㅌㅊㅍㅌㅊㅋ, subject=ㅁㄴㅇㄹㄹㄴㅁㅇ, summary=ㄴㅁㅇㄻㅇㄴㄹㄴㅇㅁ, contents=<p>ㄻㄴㅇㄹㄴㅁㄹㄴㅁㅇㄴㄹㅇㅁㄴㄹㅇㅁ</p>, writer=shcrlk12@naver.com, regDt=2022-03-10T16:45:13.885845, udtDt=null, filename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, urlFilename=/img/blog/thumbnail/2022/03/10/6bab7c8ff7454c0080bf4b661cce4c42, comments=[]), Course(id=21, categoryId=4, imagePath=null, keyword=123123312, subject=12312, summary=12212312, contents=<p>3132123123123</p>, writer=shcrlk12@naver.com, regDt=2022-03-11T16:52:37.151051, udtDt=null, filename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, urlFilename=/img/blog/thumbnail/2022/03/11/cf95be5657d44b89b6195f0393591e27, comments=[])])
+[2022-03-11 17:37:12,019] [INFO ] [CategoryServiceImpl.java:145] - 153
+[2022-03-11 17:37:37,501] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@7ff33ea7]
+[2022-03-11 17:45:04,461] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@2b95d4b2]
+[2022-03-11 17:45:07,775] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@262007ee]
+[2022-03-11 17:45:19,631] [INFO ] [CourseController.java:71] - []
+[2022-03-11 17:45:44,705] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@771466f6]
+[2022-03-11 17:45:52,483] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@75785eec]
+[2022-03-11 17:45:53,002] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@4486f8bd]
+[2022-03-11 17:45:53,447] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@9c187b7]
+[2022-03-11 17:45:53,982] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@5f8370b8]
+[2022-03-11 17:46:02,152] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@5b89c167]
+[2022-03-11 17:46:03,746] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@4b6538ca]
+[2022-03-11 17:46:29,275] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@14eb4d92]
+[2022-03-11 17:46:48,196] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@33e84176]
+[2022-03-11 17:46:50,256] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@72117749]
+[2022-03-11 17:46:50,774] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@29162cf]
+[2022-03-11 17:46:56,453] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@ece8f3d]
+[2022-03-11 17:47:04,058] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@10935db8]
+[2022-03-11 17:47:05,146] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@77999386]
+[2022-03-11 17:47:10,295] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@7ef7ecdd]
+[2022-03-11 17:47:10,754] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@7a95afed]
+[2022-03-11 17:47:18,536] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@45744944]
+[2022-03-11 17:47:19,205] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@487acf15]
+[2022-03-11 17:47:19,733] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@650c023]
+[2022-03-11 17:47:20,197] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@1762e433]
+[2022-03-11 17:47:20,631] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@79011d67]
+[2022-03-11 17:47:20,986] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@3e1947fd]
+[2022-03-11 17:47:21,274] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@26cf8deb]
+[2022-03-11 17:47:21,530] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@3e2e168]
+[2022-03-11 17:47:21,805] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@1e980c68]
+[2022-03-11 17:47:22,286] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@2a49ed2f]
+[2022-03-11 17:47:34,680] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@71a282d3]
+[2022-03-11 17:47:35,141] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@5d576e71]
+[2022-03-11 17:47:35,420] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@4a05980b]
+[2022-03-11 17:47:35,646] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@6166d1bb]
+[2022-03-11 17:47:35,844] [INFO ] [CourseController.java:71] - [com.zerobase.fastlms.course.dto.CommentDto@6b88ba1b]

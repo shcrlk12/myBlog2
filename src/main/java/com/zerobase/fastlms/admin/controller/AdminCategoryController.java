@@ -21,9 +21,9 @@ public class AdminCategoryController {
     private final CategoryService categoryService;
     
     @GetMapping("/category/list")
-    public String list(Model model, MemberParam parameter) {
+    public String list(Model model, MemberParam parameter, Principal principal) {
         
-        List<CategoryDto> list = categoryService.list();
+        List<CategoryDto> list = categoryService.list(principal.getName());
         model.addAttribute("list", list);
       
         return "/category/list";

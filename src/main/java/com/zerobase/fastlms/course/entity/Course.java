@@ -8,6 +8,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -30,17 +34,17 @@ public class Course {
     
     @Lob
     String contents;
-    long price;
-    long salePrice;
-    LocalDate saleEndDt;
 
-    String writter;
+    String writer;
 
     LocalDateTime regDt;//등록일(추가날짜)
     LocalDateTime udtDt;//수정일(수정날짜)
-    
-    
+
     String filename;
     String urlFilename;
-    
+
+    @OneToMany
+    @JoinColumn(name = "comment_id")
+    private List<Comment> comments = new ArrayList<>();
+
 }
